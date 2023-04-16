@@ -1,0 +1,150 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(201, 220, 236);
+}
+
+#container-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.child-div-1 {
+    width: 60vw;
+    margin-bottom: 10px;
+}
+
+#para-1 {
+    background-color: aliceblue;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#para-1 p {
+    font-size: 20px;
+}
+
+#img-cursol img {
+    border-radius: 12px;
+}
+
+#sip-btn button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+}
+
+#sip-btn button:hover {
+    background-color: #aa040a;
+}
+
+#sip-btn button a {
+    color: white;
+}
+
+.carousel-control-prev-icon {
+    color: red;
+}
+
+.carousel-control-next-icon {
+    color: red;
+}
+
+
+#container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #bebebe,
+        -5px -5px 10px #ffffff;
+    margin: 80px auto;
+    width: 70vw;
+}
+
+.child-div-2 {
+    margin: 20px;
+}
+
+#container-2 div img {
+    height: 75vh;
+    width: 25vw;
+    border-radius: 8px;
+}
+
+
+
+/* Calculator style range */
+.form-div-child {
+    border: 4.5px solid whitesmoke;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input[type="range"] {
+    width: 93%;
+}
+
+.display {
+    border: 1px solid silver;
+    display: inline-block;
+    padding: 0px 40px;
+    border-radius: 4px;
+    color: red;
+}
+
+.display span {
+    color: red;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #aa040a;
+    cursor: pointer;
+}
+
+
+/* responsive */
+@media (max-width:950px) {
+    .child-div-1 {
+        width: 80vw;
+    }
+
+    #container-2 {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #container-2 div img {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+/* responsive */
+/* Calculator style range */

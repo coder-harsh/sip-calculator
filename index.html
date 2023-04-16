@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- bootstrap lib -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <!-- bootstrap lib -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</head>
+
+<body>
+    <div id="container-1">
+        <div id="para-1" class="child-div-1">
+            <p>
+                Start Small, invest small with SIP
+            </p>
+        </div>
+        <div id="img-cursol" class="child-div-1">
+            <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/image-1.jpg" class="d-block w-100" alt="Wild Landscape" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/image-2.jpg" class="d-block w-100" alt="Camera" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/image-3.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/image-4.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+                    data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+                    data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div id="sip-btn">
+            <button><a href="#sip">Start SIP</a></button>
+        </div>
+    </div>
+    <div id="container-2">
+        <div id="container-2-left" class="child-div-2">
+            <img src="image/image-5-retirement.jpg" alt="">
+        </div>
+        <div class="child-div-2" id="container-2-right">
+            <div>
+                <h3>
+                    Plan Your Retirement
+                </h3>
+                <p>
+
+                </p>
+            </div>
+            <div>
+                <form action="" id="sip">
+                    <div class="form-div-child">
+                        <label for="ranger1">Goal amount expecting at retirement</label>
+                        <div class="display">
+                            &#8377; <span id="display1">`{ranger1_value}`</span>
+                        </div>
+                        <input type="range" id="ranger1" class="slider" min="500" max="150000" step="10">
+                    </div>
+                    <div class="form-div-child">
+                        <label for="ranger2">In how many years are you retiring</label>
+                        <div class="display">
+                            <span id="display2">`{ranger2_value}`</span> Years
+                        </div>
+                        <input type="range" id="ranger2" class="slider" min="0" max="60" step="1">
+                    </div>
+                    <div class="form-div-child">
+                        <label for="ranger3">How much have you saved until now</label>
+                        <div class="display">
+                            &#8377; <span id="display3">`{ranger3_value}`</span>
+                        </div>
+                        <input type="range" id="ranger3" class="slider" min="500" max="150000" step="1">
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">
+                            So, to plan for your Retirement, you will need ₹ <span
+                                id="display4">`{ranger4_value}`</span> in 1 years.
+                            Your current
+                            savings of
+                            ₹100 when invested may appreciate to ₹107. You may need to save an additional of ₹10,393 to
+                            plan for you Retirement.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
