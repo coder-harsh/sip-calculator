@@ -1,3 +1,10 @@
+let disappear_image_cursol = () => {
+    document.getElementById("container-1").style.display = "none";
+    document.getElementById("container-2").style.display = "flex";
+    document.getElementById("container-2").style.marginTop = "5px";
+}
+
+
 // principal 1
 principl_1_inp.value = 500000;
 setInterval(() => {
@@ -13,7 +20,7 @@ setInterval(() => {
 
 // risk
 
-function risk_inp_fun() {
+let risk_inp_fun = () => {
 
     if (risk_inp.value == 4) {
         risk.innerText = "Low";
