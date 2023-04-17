@@ -59,9 +59,14 @@ setInterval(() => {
 
 // comp_interest_1
 setInterval(() => {
-    comp_interest_1.innerText = principl_1_inp.value * (7) ** time_inp.value;
+    comp_interest_1.innerText = principl_1_inp.value * (1 + 6 / 100) ** time_inp.value;
 })
 // comp_interest_2
 setInterval(() => {
-    comp_interest_2.innerText = principl_2_inp.value * (1 + risk_inp.value) ** time_inp.value;
+    comp_interest_2.innerText = principl_2_inp.value * (1 + risk_inp.value / 100) ** time_inp.value;
+})
+
+// sol_ci_diff
+setInterval(() => {
+    sol_ci_diff.innerText = (principl_1_inp.value * (1 + 6 / 100) ** time_inp.value) - (principl_2_inp.value * (1 + risk_inp.value / 100) ** time_inp.value);
 })
