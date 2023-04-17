@@ -101,6 +101,7 @@ input[type="range"] {
     padding: 0px 40px;
     border-radius: 4px;
     color: red;
+    margin-left: 10px;
 }
 
 .display span {

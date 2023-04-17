@@ -66,7 +66,7 @@
         <div class="child-div-2" id="container-2-right">
             <div>
                 <h3>
-                    Plan Your Retirement
+                    Want to Plan Your Dream Car
                 </h3>
                 <p>
 
@@ -75,34 +75,46 @@
             <div>
                 <form action="" id="sip">
                     <div class="form-div-child">
-                        <label for="ranger1">Goal amount expecting at retirement</label>
+                        <label for="principl_1_inp">The current cost of my
+                            dream car is</label>
                         <div class="display">
-                            &#8377; <span id="display1">`{ranger1_value}`</span>
+                            &#8377; <span id="principl_1"></span>
                         </div>
-                        <input type="range" id="ranger1" class="slider" min="500" max="150000" step="10">
+                        <input type="range" id="principl_1_inp" class="slider" min="50000" max="1500000" step="10">
                     </div>
                     <div class="form-div-child">
-                        <label for="ranger2">In how many years are you retiring</label>
+                        <label for="principl_2_inp">Amount I can invest today</label>
                         <div class="display">
-                            <span id="display2">`{ranger2_value}`</span> Years
+                            &#8377; <span id="principl_2"></span>
                         </div>
-                        <input type="range" id="ranger2" class="slider" min="0" max="60" step="1">
+                        <input type="range" id="principl_2_inp" class="slider" min="500" max="100000" step="1">
                     </div>
                     <div class="form-div-child">
-                        <label for="ranger3">How much have you saved until now</label>
+                        <label for="risk_inp">My Risk Quotient</label>
                         <div class="display">
-                            &#8377; <span id="display3">`{ranger3_value}`</span>
+                            <span id="risk">Moderate</span>
                         </div>
-                        <input type="range" id="ranger3" class="slider" min="500" max="150000" step="1">
+                        <input type="range" id="risk_inp" class="slider" min="4" max="19" step="1"
+                            onchange="risk_inp_fun()" value="8">
+                    </div>
+                    <div class="form-div-child">
+                        <label for="time_inp">I want to buy the car in</label>
+                        <div class="display">
+                            <span id="time"></span> Years
+                        </div>
+                        <input type="range" id="time_inp" class="slider" min="1" max="30" step="1">
                     </div>
                     <div>
                         <p style="text-align: justify;">
-                            So, to plan for your Retirement, you will need ₹ <span
-                                id="display4">`{ranger4_value}`</span> in 1 years.
-                            Your current
-                            savings of
-                            ₹100 when invested may appreciate to ₹107. You may need to save an additional of ₹10,393 to
-                            plan for you Retirement.
+                            For your dream car, you will require a corpus of ₹ <span id="comp_interest_1"></span>
+                            in <span id="sol_time"></span>
+                            years. Your current investment of
+                            Rs. <span id="sol_principl_2"></span> may appreciate to Rs. <span
+                                id="comp_interest_2"></span>
+                            assuming <span id="sol_risk_inp"></span>% rate of return.
+                            You will need to accumulate
+                            an additional amount of Rs. 6,50,654 to fund your dream car.
+                            <hr>
                         </p>
                     </div>
                 </form>

@@ -1,22 +1,67 @@
-ranger1.value = 500;
-let ranger1_value = ranger1.value;
+// principal 1
+principl_1_inp.value = 500000;
 setInterval(() => {
-    display1.innerText = ranger1.value;
-})
-
-ranger2.value = 0;
-let ranger2_value = ranger2.value;
-setInterval(() => {
-    display2.innerText = ranger2.value;
-})
-ranger3.value = 5;
-let ranger3_value = ranger3.value;
-setInterval(() => {
-    display3.innerText = ranger3.value;
+    principl_1.innerText = principl_1_inp.value;
 })
 
 
+// principal 2
+principl_2_inp.value = 3500;
 setInterval(() => {
-    display4.innerText = (ranger3.value) * 67;
+    principl_2.innerText = principl_2_inp.value;
 })
 
+// risk
+
+function risk_inp_fun() {
+
+    if (risk_inp.value == 4) {
+        risk.innerText = "Low";
+    }
+    else if (risk_inp.value > 4 && risk_inp.value < 8) {
+        risk.innerText = "Low-to-Moderate";
+    }
+    else if (risk_inp.value >= 8 && risk_inp.value < 11) {
+        risk.innerText = "Moderate";
+    }
+    else if (risk_inp.value >= 11 && risk_inp.value < 12) {
+        risk.innerText = "Moderate High";
+    }
+    else if (risk_inp.value >= 12 && risk_inp.value < 19) {
+        risk.innerText = "High";
+    }
+    else if (risk_inp.value == 19) {
+        risk.innerText = "Very High";
+    }
+}
+
+// time
+time_inp.value = 5;
+setInterval(() => {
+    time.innerText = time_inp.value;
+})
+
+
+
+// solution
+//sol_time
+setInterval(() => {
+    sol_time.innerText = (time_inp.value);
+})
+//sol_risk_inp
+setInterval(() => {
+    sol_risk_inp.innerText = (risk_inp.value);
+})
+//sol_principal_2
+setInterval(() => {
+    sol_principl_2.innerText = (principl_2_inp.value);
+})
+
+// comp_interest_1
+setInterval(() => {
+    comp_interest_1.innerText = principl_1_inp.value * (7) ** time_inp.value;
+})
+// comp_interest_2
+setInterval(() => {
+    comp_interest_2.innerText = principl_2_inp.value * (1 + risk_inp.value) ** time_inp.value;
+})
